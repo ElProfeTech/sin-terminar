@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.header{
+   
+
+   
+    width: 1200px;
+    margin: auto;
+    height: 600px;
+    background-color: rgb(175, 110, 164);
+    position: relative;
+   
+}
+
+.contenedor-carrito{
+    width: 400px;
+    height: auto;
+    
+    background-color:rgb(100, 89, 122);
+    position: absolute;
+    top: 70px;
+    right: 10px;
+   *display: none;
+   border-radius: 10px;
+}
+
+.listado-carrito{
+ width: 100%;
+ border-radius: 10px;
+ overflow: hidden;
+ 
+
+}
+
+.contenedor-carrito.mostrar-carrito{
+    
+    *display: block;
+}
+
+
+.info-carrito{
+    width: 100%;
+    height: 100px;
+    
+    display: flex;
+    border-bottom: 2px solid gray;
+    
+
+}
+
+.info-carrito .foto-carrito{
+    width: 80px;
+    height: 80%;
+    display: block;
+    margin: auto;
+    *background-color: yellow;
+}
+
+.info-carrito .foto-carrito img{
+    width: 100%;
+    height: 90%;
+    padding-top: 3px;
+    object-fit: contain;
+}
+
+
+
+.info-carrito .titulo-carrito{
+    *background-color: green;
+    width: 270px;
+    height: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-carrito .titulo-carrito .articulo{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+  .info-carrito .titulo-carrito .precio-cantidad .precio{
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.info-carrito .titulo-carrito .precio-cantidad .cantidad{
+    font-size: 15px;
+    width: 45px;
+    padding: 3px;
+}
+
+
+
+.info-carrito .quitar-articulo{
+    *background-color: rgb(128, 0, 79);
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin: auto;
+}
+
+.info-carrito .quitar-articulo img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    filter: invert(1);
+
+    
+}
+
+.info-carrito .quitar-articulo img:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.total-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 22px;
+    color: white;
+}
+
+ .proceder-pago{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+.proceder-pago a{
+    font-size: 17px;
+    margin-top: 5px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+   
+}
+
+.menu_container{
+    display: flex;
+    *background-color: red;
+    justify-content: space-around;
+    padding: 10px;
+   
+   
+    
+}
+
+.menu_container .icono-carrito{
+  display: block;
+  width: 50px;
+  height: 40px;
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+  
+}
+.menu_container .icono-carrito .contador-carrito{
+    display:flex;
+    background-color:black;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    justify-content: center;
+    top: 30px;
+    right: 0;
+    border-radius: 50%;
+  }
+
+  .menu_container .icono-carrito .contador-carrito span{
+   color: white;
+   line-height: 25px;
+   font-size: 13px;
+  }
+
+
+
+.menu_container .icono-carrito img{
+    width: 100%;
+    
+  }
+
+
+
+.logo{
+    display:block ;
+    color:white;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+
+.menu li a{
+    *background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-left: solid 1px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: block;
+    
+
+}
+.menu li a:hover{
+    
+    color: darkgoldenrod;
+    
+
+}
+ 
+.header .portada{
+    
+    width: 100%;
+    height: 90%;
+    *background-color: blue;
+    display: flex;
+
+
+}
+
+.portada_texto{
+flex-basis: 60%;
+*background-color: red;
+display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+.portada_texto h1{
+    font-size: 5rem;
+    color: white;
+    
+    
+    }
+
+.portada_img{
+    *background-color: yellow;
+flex-basis: 40%;
+height:100%;
+margin-right: 100px;
+
+}
+
+.portada_img img{
+width: 80%;
+margin-top: 20px;
+
+object-fit: contain;
+height: 90%;
+}
+
+
+#busqueda_container{
+width: 400px;
+margin: auto;
+justify-content: center;
+padding: 20px;
+display: flex;
+*background-color: red;
+margin-bottom: 20px;
+
+}
+
+#busqueda_container #inputBuscar{
+    
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 300px;
+    }
+
+
+
+.AllProducts h2{
+    display: block;
+    text-align: center;
+    padding: 30px;
+}
+
+.AllProducts .products{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+ gap: 20px;
+ padding-bottom: 100px;
+ 
+ 
+}
+
+.AllProducts .products .productCard{
+    height: 500px;
+    border: 1px solid grey;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    
+}
+
+.AllProducts .products .productCard:hover{
+   transform: scale(1.01);
+   border: 1.5px solid red;
+   
+   
+}
+
+.productCard .productImg{
+    height: 360px;
+    background-color: darkgray;
+}
+
+
+.productCard .productImg img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.productCard .productInfo{
+    height: 140px;
+    width: 100%;
+    background-color:white;
+    padding: 15px;
+    display: grid;
+    place-items: center;
+}
+
+.productInfo .price{
+    font-size: 1.5em;
+}
+
+.productInfo .addToKartBtn{
+    font-size: 1.2em;
+    padding: 10px 30px;
+    color: white;
+    background-color: black;
+    border: white 1px solid;
+    cursor: pointer;
+}
+
+.productInfo .addToKartBtn:hover{
+    color: yellow;
+}
+
+#toast {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+#toast.mostrar {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.toast h2{
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    color: green;
+    }
+
+
